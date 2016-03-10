@@ -11,20 +11,20 @@ function Character(options) {
   this.damage = function(enemy) {
     var random = Math.floor(Math.random() * 10 + 1);
     if (random > 4) {
-      if (this.health < 1) {
-        console.log("Oh no! " + enemy.name +
+      if (enemy.health < 1) {
+        alert("Oh no! " + enemy.name +
           " has perished and was flushed down a toilet.");
       }
-      if (enemy.weapon) {
-        this.health = this.health - (enemy.power * enemy.weapon.strength);
+      if (this.weapon) {
+        enemy.health = enemy.health - (this.power * this.weapon.strength);
         console.log("Ouch! " + enemy.name + " just got hit by a " + enemy.weapon
-          .name);
+          .name + "!" + enemy.name + "'s health is now " + enemy.health + "!");
       } else {
-        this.health = this.health - this.power;
+        enemy.health = enemy.health - enemy.power;
       }
     } else {
       console.log("Rats! You didn't hit " + enemy.name + " with the " +
-        enemy.weapon.name + "!");
+        this.weapon.name + "!");
     }
   };
   this.equip = function(name, strength) {
@@ -40,7 +40,7 @@ function Character(options) {
       ' health points! Wow!');
   };
   this.pottery = function(enemy) {
-    enemy.ouch(this);
+    this.ouch(enemy);
   };
   this.ouch = function(enemy) {
     var random = Math.floor(Math.random() * 10 + 1);
