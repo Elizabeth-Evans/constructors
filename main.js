@@ -21,9 +21,9 @@ function Character(options) {
         enemy.health = enemy.health - enemy.power;
       }
       if (enemy.health < 1) {
-        alert("Oh no! " + enemy.name +
-          " has perished and was flushed down a toilet.");
-          // $(body).html("<img>");
+        $('body').html("<h1>Oh no! " + enemy.name +
+          " has perished and was flushed down a toilet.</h1>" +
+          "<img src='winning.jpg'>" + "<img src='winning.jpg'>" + "<img src='winning.jpg'>");
       }
 
     } else {
