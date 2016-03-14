@@ -1,0 +1,63 @@
+body{
+  color:white;
+  background-color: lightpink;
+  text-shadow: -3px 0 hotpink, 0 0px hotpink, 0px 0 hotpink, 0 -3px hotpink;
+}
+.wrapper{
+  margin-left: 2%;
+  width:60%;
+  height:450px;
+  border: 5px dashed pink;
+  background-color: hotpink;
+  box-shadow: 0 0 0 10px hotpink;
+  display: inline-block;
+  color:#ffffff;
+  text-shadow:none;
+}
+.options{
+  width:20%;
+  height:420px;
+  border: 5px dashed pink;
+  background-color: hotpink;
+  box-shadow: 0 0 0 10px hotpink;
+  display:inline-block;
+  margin-left: 5%;
+  padding:2%;
+  text-shadow:none;
+
+}
+
+
+
+section{
+  width:45%;
+  display: inline-block;
+}
+
+h1 , h2 , .hanklinHealth , .hankyHealth , section{
+  text-align: center;
+
+}
+
+img{
+  width: 150px;
+  height:190px;
+  border: pink 5px solid;
+  margin-left: 13%;
+}
+
+a{
+  display:inline-block;
+  color: #ffffff;
+  padding:10%;
+}
+
+.comments{
+  width:80%;
+  height:50px;
+  margin-top: 2%;
+  margin-left: 8%;
+  padding:3%;
+  color:#ffffff;
+  font: bold;
+}
